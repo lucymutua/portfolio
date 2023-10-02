@@ -1,10 +1,4 @@
-/******* Bootstrap Theming ********/
-/*!
- * Bootstrap v4.5.3 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -525,10 +519,6 @@ mark,
   content: "\2014\00A0";
 }
 
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -601,11 +591,12 @@ pre code {
 .container-lg,
 .container-xl {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0px;
+  padding-left: 0px;
   margin-right: auto;
   margin-left: auto;
 }
+
 
 @media (min-width: 576px) {
   .container, .container-sm {
@@ -9881,32 +9872,6 @@ h6,
     opacity: 0;
   }
 }
-
-#videoModal .modal-dialog {
-  position: relative;
-  max-width: 800px;
-  margin: 60px auto 0 auto;
-}
-
-#videoModal .modal-body {
-  position: relative;
-  padding: 0px;
-}
-
-#videoModal .close {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  right: 0px;
-  top: -30px;
-  z-index: 999;
-  font-size: 30px;
-  font-weight: normal;
-  color: #ffffff;
-  background: #000000;
-  opacity: 1;
-}
-
 .progress {
   border-radius: 10px;
 }
@@ -9917,14 +9882,6 @@ h6,
   transition: 2s;
 }
 
-.service-icon {
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 60px;
-}
 
 .portfolio-item .portfolio-btn {
   position: absolute;
@@ -9945,23 +9902,25 @@ h6,
   left: 30px;
 }
 
-.testimonial-carousel .owl-dots {
-  margin-top: 25px;
-  text-align: center;
+
+.portfolio-img-fluid {
+  transition: transform 0.8s ease-in-out;
 }
 
-.testimonial-carousel .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 10px;
-  background: #dddddd;
+.portfolio-img-fluid:hover {
+  transform: scale(1.1);
 }
 
-.testimonial-carousel .owl-dot.active {
-  background: #0BCEAF;
+/* Establecer un z-index para controlar la superposición */
+.position-relative img {
+  z-index: 1; /* Ajusta este valor según sea necesario para controlar la superposición */
 }
+
+/* Establecer una altura fija para los contenedores de las imágenes */
+.position-relative {
+  height: 300px; /* Ajusta la altura según sea necesario */
+}
+
 
 .blog-date {
   position: absolute;

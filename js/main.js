@@ -88,6 +88,21 @@
 
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
+
+ 
+
+    // Obtén todas las imágenes con la clase .img-fluid
+    const images = document.querySelectorAll('.img-fluid');
+
+    // Agrega un controlador de clic a cada imagen
+    images.forEach(image => {
+        image.addEventListener('click', (event) => {
+            event.preventDefault(); // Previene el comportamiento predeterminado del enlace
+            window.open(image.parentElement.href, '_blank'); // Abre el enlace en una nueva ventana o pestaña
+        });
+    });
+
+
     
     
     // Back to top button
