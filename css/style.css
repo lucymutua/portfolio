@@ -9882,6 +9882,76 @@ h6,
   transition: 2s;
 }
 
+.skills {
+  position: relative;
+  width: 100%;
+  padding: 45px 0 15px 0;
+}
+
+
+.skills .box-icon i  {
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  
+}
+
+.box-icon .icono_responsive{
+  width: 90px;
+  color: #797979;
+ 
+}
+
+
+.skills .box-icon i:hover{
+  /* font-size: 75px; */
+  box-shadow: -1px 2px 30px 3px #AF9483; 
+}
+
+.skills .box-icon img:hover{
+  /* width: 85px; */
+  box-shadow: -1px 2px 30px 3px #AF9483; 
+}
+
+.skills .box-icon p {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 1s;
+}
+
+.skills .box-icon{
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 60px;
+  justify-content: center;
+  cursor: pointer;
+ 
+
+}
+
+.skills .row{
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Agrega este CSS a tu hoja de estilo */
+.rotate-360 {
+  transition: transform 0.5s ease;
+}
+
+.rotate-360.rotate {
+  transform: rotate(360deg);
+}
+
+
 
 .portfolio-item .portfolio-btn {
   position: absolute;
