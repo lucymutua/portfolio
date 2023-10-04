@@ -9920,20 +9920,26 @@ h6,
   font-weight: 600;
   transition: 1s;
 }
-
-.skills .box-icon{
+/* Estilo predeterminado para .box-icon sin rotación ni hover */
+.skills .box-icon {
   width: 100px;
   height: 100px;
   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 60px;
+  border-radius: 40px;
   justify-content: center;
   cursor: pointer;
- 
-
+  transition: transform 0.5s ease; /* Transición para la rotación */
 }
+
+/* Estilo de hover para .box-icon */
+.skills .box-icon:hover {
+  transform: rotate(360deg); /* Rotación de 360 grados al hacer hover */
+}
+
+
 
 .skills .row{
   padding-top: 60px;
@@ -9942,14 +9948,6 @@ h6,
   gap: 40px;
 }
 
-/* Agrega este CSS a tu hoja de estilo */
-.rotate-360 {
-  transition: transform 0.5s ease;
-}
-
-.rotate-360.rotate {
-  transform: rotate(360deg);
-}
 
 
 

@@ -60,16 +60,20 @@
     $(document).ready(function () {
         // Agrega un controlador de clic a los elementos con la clase .clickable-icon
         $(".clickable-icon").click(function () {
-          // Agrega la clase .rotate-360 al elemento actual
-          $(this).addClass("rotate-360");
-      
-          // Elimina la clase .rotate-360 después de 500 milisegundos (ajusta el tiempo según tus preferencias)
-          setTimeout(function () {
-            $(".clickable-icon").removeClass("rotate-360");
-          }, 500);
+            // Verifica si el elemento ya tiene la clase rotate-360
+            if (!$(this).hasClass("rotate-360")) {
+                // Agrega la clase .rotate-360 al elemento actual
+                $(this).addClass("rotate-360");
+    
+                // Elimina la clase .rotate-360 después de 500 milisegundos (ajusta el tiempo según tus preferencias)
+                setTimeout(function () {
+                    $(".clickable-icon").removeClass("rotate-360");
+                }, 500);
+            }
         });
-      });
-      
+    });
+    
+
 
 
     // Portfolio isotope and filter
