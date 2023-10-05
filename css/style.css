@@ -9948,7 +9948,10 @@ h6,
   gap: 40px;
 }
 
-
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
 
 
 .portfolio-item .portfolio-btn {
